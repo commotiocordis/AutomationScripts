@@ -78,11 +78,6 @@ def run(args):
                 subprocess.run(command, check=True)
             except subprocess.CalledProcessError:
                 print(f"Failed to execute for target: {target}")
-            try:
-                # Execute the command
-                subprocess.run(command, check=True)
-            except subprocess.CalledProcessError:
-                print(f"Failed to execute for target: {target}")
 
 def main():
     # Set up argument parsing
